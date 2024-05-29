@@ -64,7 +64,7 @@ footer {
     position: relative;
     width: 100%;
     bottom: 0;
-    font-size: xx-small;
+    font-size: small;
 }
 
 article {
@@ -72,6 +72,7 @@ article {
     border-radius: 7.5px;
     padding: 10px;
     margin-bottom: 20px;
+    min-width: 600px;
 }
 
 article a {
@@ -101,4 +102,36 @@ a:visited {
 a:hover,
 a:active {
     color: #bc5eff;
+}
+
+#pagination {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    align-items: baseline;
+    margin-top: 20px;
+}
+
+#pagination button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #444;
+    border: none;
+    color: #cdcdcd;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#pagination button:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+    visibility: hidden;
+}
+
+#pagination span {
+    color: #cdcdcd;
+}
+
+section {
+    margin-top: 100px;
 }
