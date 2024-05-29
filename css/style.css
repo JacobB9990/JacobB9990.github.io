@@ -61,7 +61,7 @@ main {
 footer {
     text-align: center;
     padding: 1em 0;
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: 0;
     font-size: xx-small;
@@ -69,19 +69,28 @@ footer {
 
 article {
     background-color: #333;
-    border-radius: 10px;
+    border-radius: 7.5px;
     padding: 10px;
     margin-bottom: 20px;
 }
 
 article a {
     text-decoration: none;
+    color: #cdcdcd !important;
+}
+
+article p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #ababab;
 }
 
 article a:hover {
-    background-color: #333;
     text-decoration: underline;
-    transition: background-color 0.5s ease;
+    color: #bc5eff !important;
 }
 
 a:link,
