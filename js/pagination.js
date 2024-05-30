@@ -1,21 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
     const articlesPerPage = 10;
     let currentPage = 1;
-    const articles = [
-        { title: "Article 1", content: "Content for article 1" },
-        { title: "Article 2", content: "Content for article 2" },
-        { title: "Article 3", content: "Content for article 3" },
-        { title: "Article 4", content: "Content for article 4" },
-        { title: "Article 5", content: "Content for article 5" },
-        { title: "Article 6", content: "Content for article 6" },
-        { title: "Article 7", content: "Content for article 7" },
-        { title: "Article 8", content: "Content for article 8" },
-        { title: "Article 9", content: "Content for article 9" },
-        { title: "Article 10", content: "Content for article 10" },
-        { title: "Article 11", content: "Content for article 11" },
-        { title: "Article 12", content: "Content for article 12" },
-        // Add more articles here as needed
-    ];
+    let articles = [];
+
+    async function loadArticles() {
+        try {
+            const response = await fetch('articles.json');
+            if (!response.ok) {
+                throw new Error('Failed to fetch articles');
+            }
+            articles = await response.json();
+            console.log("Articles loaded:", articles); // Check if articles are loaded properly
+            displayArticles(currentPage);
+        } catch (error) {
+            console.error('Error loading articles:', error);
+        }
+    }
 
     function displayArticles(page) {
         const start = (page - 1) * articlesPerPage;
@@ -26,15 +26,37 @@ document.addEventListener('DOMContentLoaded', function () {
         articlesContainer.innerHTML = '';
 
         articlesToDisplay.forEach(article => {
-            const articleElement = document.createElement('article');
-            const titleElement = document.createElement('a');
-            titleElement.href = "#";
-            titleElement.innerText = article.title;
-            const contentElement = document.createElement('p');
-            contentElement.innerText = article.content;
+            // Extracting the title, content, and date from each object in the JSON
+            const title = article.title;
+            const content = article.content;
+            const date = new Date(article.date); // Convert string to Date object
 
+            // Create article container
+            const articleElement = document.createElement('article');
+            articleElement.classList.add('article');
+
+            // Create title element
+            const titleElement = document.createElement('a');
+            titleElement.classList.add('article-title');
+            titleElement.href = "#";
+            titleElement.innerText = title; // Using the extracted title
+
+            // Create content element
+            const contentElement = document.createElement('p');
+            contentElement.classList.add('article-content');
+            contentElement.innerText = content; // Using the extracted content
+
+            // Create date element
+            const dateElement = document.createElement('p');
+            dateElement.classList.add('article-date');
+            dateElement.innerText = `Published on: ${date.toLocaleString()}`; // Display formatted date and time
+
+            // Append elements to article container
             articleElement.appendChild(titleElement);
             articleElement.appendChild(contentElement);
+            articleElement.appendChild(dateElement);
+
+            // Append article container to articles container
             articlesContainer.appendChild(articleElement);
         });
 
@@ -43,11 +65,10 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('nextPage').disabled = end >= articles.length;
     }
 
-    function changePage(direction) {
+    window.changePage = function (direction) {
         currentPage += direction;
         displayArticles(currentPage);
     }
 
-    // Initial display
-    displayArticles(currentPage);
+    loadArticles();
 });
