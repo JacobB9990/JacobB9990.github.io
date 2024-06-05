@@ -39,6 +39,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -79,7 +80,10 @@ article {
     border-radius: 10px;
     padding: 10px 20px;
     margin-bottom: 20px;
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 article a {
@@ -115,8 +119,8 @@ a:active {
 
 #pagination {
     display: flex;
-    justify-content: right;
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
 }
 
@@ -131,9 +135,10 @@ a:active {
 }
 
 #pagination button:disabled {
-    background-color: #cdcdcd;
+    background-color: #333;
+    color: #cdcdcd;
     cursor: not-allowed;
-    visibility: hidden;
+    visibility: visible;
 }
 
 #pagination span {
@@ -170,4 +175,66 @@ svg {
 .article-date {
     font-style: italic;
     color: #888;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    body {
+        padding: 10px 20px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin-left: 5px;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+
+    article {
+        padding: 10px 15px;
+    }
+
+    #pagination button {
+        padding: 5px 10px;
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+
+    article a {
+        font-size: 1em;
+    }
+
+    #pagination {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pagination button {
+        margin: 5px 0;
+    }
 }

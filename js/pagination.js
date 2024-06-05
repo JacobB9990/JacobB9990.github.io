@@ -38,7 +38,10 @@ document.addEventListener('DOMContentLoaded', function () {
             // Create title element
             const titleElement = document.createElement('a');
             titleElement.classList.add('article-title');
-            titleElement.href = "#";
+
+            // Create the href value by replacing spaces with hyphens, appending ".html", and adding the directory path
+            const hrefValue = `/articlesHTML/${title.replace(/\s+/g, '-').toLowerCase()}.html`;
+            titleElement.href = hrefValue;
             titleElement.innerText = title; // Using the extracted title
 
             // Create content element

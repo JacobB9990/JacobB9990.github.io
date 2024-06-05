@@ -1,5 +1,20 @@
 [
   {
+    "title": "article",
+    "content": "<h2 id=\"wireless-networking-deep-dive\">Wireless Networking Deep Dive</h2>\n<h3 id=\"wireless-lan-wlan-design-considerations\">Wireless LAN (WLAN) Design Considerations</h3>\n<h4 id=\"wireless-deployment-options\">Wireless Deployment Options</h4>\n<ul>\n    <li>\n        <p><strong>Autonomous Access Points (APs)</strong></p>\n        <ul>\n            <li>Standalone, independent devices</li>\n            <li>Home or small office environments</li>\n            <li>Controller-less deployment model</li>\n            <li>Not commonly used in large environments</li>\n        </ul>\n    </li>\n    <li>\n        <p><strong>Lightweight Access Points (APs)</strong></p>\n        <ul>\n            <li>Requires central <em>wireless LAN controller</em> (WLC)</li>\n            <li>Controller-based deployment model</li>\n            <li>WLCs can be physical or virtual</li>\n            <li>Controller communicates changes to the APs</li>\n            <li><em>Control and Provisioning of Wireless Access Points</em> (CAPWAP)<ul>\n                    <li>A Protocol that allows the APs to communicate</li>\n                </ul>\n            </li>\n        </ul>\n    </li>\n</ul>\n<h4 id=\"ways-to-deploy\">Ways to Deploy</h4>\n<h5 id=\"cisco-flexconnect-\">Cisco FlexConnect:</h5>\n<ul>\n    <li>Configure and control remote wireless network</li>\n    <li>Similar to Layer 3 roaming with CAPWAP</li>\n</ul>\n<h5 id=\"central-switched-\">Central Switched:</h5>\n<ul>\n    <li>Normal CAPWAP mode of operation</li>\n    <li>Typically not the recommended mode</li>\n</ul>\n<h5 id=\"local-switched-\">Local Switched:</h5>\n<ul>\n    <li>Map user traffic to VLAN on adjacent switch</li>\n    <li>Control and management traffic still sent over CAPWAP to WLC</li>\n</ul>\n<h4 id=\"location-services\">Location Services</h4>\n<h5 id=\"use-cases-for-location-services-\">Use Cases for Location Services:</h5>\n<ul>\n    <li>Enterprise asset tracking</li>\n    <li>Location-based advertising</li>\n</ul>\n<h6 id=\"note-\">Note:</h6>\n<ul>\n    <li><strong>RSS</strong> (<em>dBm</em>) - Received Signal Strength<ul>\n            <li>Can be to triangulate a devices location</li>\n        </ul>\n    </li>\n</ul>\n<h5 id=\"cisco-solutions-\">Cisco Solutions:</h5>\n<ul>\n    <li>Real-time Location Services (<em>RTLS</em>)</li>\n    <li>Cisco DNA Spaces</li>\n    <li>Cisco Meraki Platform (<em>Medium Size</em>)</li>\n</ul>\n<h3 id=\"wlan-design-options\">WLAN Design Options</h3>\n<h4 id=\"ad-hoc-wireless-lan\">Ad Hoc Wireless Lan</h4>\n<ul>\n    <li>Allows one device to communicate directly with another device with no AP</li>\n</ul>\n<h4 id=\"more-types-of-designs\">More Types of Designs</h4>\n<ul>\n    <li><strong>Infrastructure Wireless LAN</strong>\n        <ul>\n            <li>Access Point connected to switch via ethernet</li>\n        </ul>\n    </li>\n    <li><strong>Mesh Wireless LAN</strong>\n        <ul>\n            <li>Used when not close to an ethernet port and can connect to another AP</li>\n        </ul>\n    </li>\n</ul>\n<h3 id=\"wireless-communications-theory\">Wireless Communications Theory</h3>\n<h5 id=\"transverse-wave\">Transverse Wave</h5>\n<ul>\n    <li>Electric Field Vertical</li>\n    <li>Magnetic Field Horizontal</li>\n</ul>\n<h4 id=\"how-a-dipole-antenna-radiates-em-waves\">How a Dipole Antenna Radiates EM Waves</h4>\n<ul>\n    <li>Pole is bent rather than straight or else the + and - would cancel out.</li>\n    <li><strong>Lambda</strong> (<em>λ</em>) represents the wave length</li>\n</ul>\n<p>Paused at 28:03</p>",
+    "date": "2024-06-04T22:24:25.844Z"
+  },
+  {
+    "title": "article2 copy 2",
+    "content": "Testing two",
+    "date": "2024-05-31T15:38:18.274Z"
+  },
+  {
+    "title": "article2 copy 3",
+    "content": "Testing two",
+    "date": "2024-05-31T15:44:51.849Z"
+  },
+  {
     "title": "article2 copy 4",
     "content": "For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.\nFor 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.\nFor 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.",
     "date": "2024-05-29T23:35:30.162Z"
@@ -10,13 +25,13 @@
     "date": "2024-05-29T23:35:45.190Z"
   },
   {
+    "title": "article2 copy 6",
+    "content": "For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.\nFor 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.\nFor 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.",
+    "date": "2024-05-31T15:44:51.852Z"
+  },
+  {
     "title": "article2 copy",
     "content": "Testing two",
     "date": "2024-05-29T23:35:04.882Z"
-  },
-  {
-    "title": "article2",
-    "content": "Testing two",
-    "date": "2024-05-29T23:21:24.058Z"
   }
 ]
