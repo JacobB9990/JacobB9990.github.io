@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #cdcdcd;
+    background-color: rgb(29, 30, 32);
+    padding: 10px 30px;
+}
+
+
+main {
+    flex: 1;
+    padding: 30px 20px;
+    max-width: 1000px;
+    margin: auto;
+    min-width: 300px;
+}
+
+div {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    margin-left: 0.5in;
+    margin-right: 0.5in;
+}
+
+div h2,
+div h3,
+div h4,
+div h5,
+div h6 {
+    color: #3c63e2;
+    margin-top: 20px;
+    margin-bottom: 5;
+}
+
+
+div p {
+    margin-top: 10px;
+}
+
+div ul {
+    margin-left: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px 20px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin-left: 5px;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+
+    article {
+        padding: 10px 15px;
+    }
+
+    #pagination button {
+        padding: 5px 10px;
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+
+    article a {
+        font-size: 1em;
+    }
+
+    #pagination {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pagination button {
+        margin: 5px 0;
+    }
+}
