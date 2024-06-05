@@ -29,6 +29,15 @@ header h1 {
     white-space: nowrap;
 }
 
+header h1 a {
+    text-decoration: none;
+    transition: none;
+}
+
+header h1 a:hover {
+    color: #888;
+}
+
 nav {
     flex-grow: 1;
 }
@@ -177,7 +186,6 @@ svg {
     color: #888;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
     body {
         padding: 10px 20px;
@@ -237,4 +245,9 @@ svg {
     #pagination button {
         margin: 5px 0;
     }
+}
+
+footer span {
+    color: #a3a3a3;
+    margin: 20px;
 }
