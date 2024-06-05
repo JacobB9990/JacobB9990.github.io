@@ -42,5 +42,5 @@ function readFiles(dir) {
 }
 
 // Start reading files from the parent directory
-const articlesDirectory = path.join(__dirname, '..', 'articles'); // Adjust the path to the parent directory
+const articlesDirectory = path.join(__dirname, '..', 'articlesMD'); // Adjust the path to the parent directory
 readFiles(articlesDirectory);
