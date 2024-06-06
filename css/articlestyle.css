@@ -13,23 +13,16 @@ body {
     color: #cdcdcd;
     background-color: rgb(29, 30, 32);
     padding: 10px 30px;
-}
-
-
-main {
-    flex: 1;
-    padding: 30px 20px;
-    max-width: 1000px;
-    margin: auto;
-    min-width: 300px;
+    align-items: center;
 }
 
 div {
     display: block;
     margin: auto;
     width: fit-content;
-    margin-left: 0.5in;
-    margin-right: 0.5in;
+    margin-left: 1in;
+    margin-right: 1in;
+    max-width: 700px;
 }
 
 div h2,
