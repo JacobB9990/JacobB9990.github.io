@@ -11,126 +11,134 @@
 
 <body>
     <header></header>
-
     <div>
-        <!--Paste Below-->
-        <h2 id="wireless-networking-deep-dive">Wireless Networking Deep Dive</h2>
-        <p>In today&#39;s world, wireless networking has become a crucial component of both personal and professional
-            environments. Understanding the intricacies of Wireless LAN (WLAN) design and deployment options can
-            significantly
-            enhance network performance and reliability. This article delves into the considerations for WLAN design,
-            various
-            deployment options, and the underlying theory of wireless communications.</p>
-        <h3 id="wlan-design-considerations">WLAN Design Considerations</h3>
-        <h4 id="wireless-deployment-options">Wireless Deployment Options</h4>
-        <p>When designing a wireless network, selecting the right type of Access Point (AP) is essential. There are
-            primarily
-            two types of APs to consider: Autonomous and Lightweight.</p>
-        <ul>
-            <li>
-                <p><strong>Autonomous Access Points (APs):</strong></p>
-                <ul>
-                    <li>These are standalone, independent devices.</li>
-                    <li>Ideal for home or small office environments.</li>
-                    <li>They operate under a controller-less deployment model.</li>
-                    <li>Due to their limited scalability, they are not commonly used in large environments.</li>
-                </ul>
-            </li>
-            <li>
-                <p><strong>Lightweight Access Points (APs):</strong></p>
-                <ul>
-                    <li>These require a central Wireless LAN Controller (WLC).</li>
-                    <li>Operate under a controller-based deployment model.</li>
-                    <li>WLCs can be physical or virtual.</li>
-                    <li>The controller manages and communicates changes to the APs.</li>
-                    <li>They use the Control and Provisioning of Wireless Access Points (CAPWAP) protocol, which
-                        facilitates
-                        communication between APs and the WLC.</li>
-                </ul>
-            </li>
-        </ul>
-        <h4 id="ways-to-deploy">Ways to Deploy</h4>
-        <p>There are several deployment models to consider based on network requirements and scale:</p>
-        <ul>
-            <li>
-                <p><strong>Cisco FlexConnect:</strong></p>
-                <ul>
-                    <li>Enables configuration and control of remote wireless networks.</li>
-                    <li>Similar to Layer 3 roaming with CAPWAP.</li>
-                </ul>
-            </li>
-            <li>
-                <p><strong>Central Switched:</strong></p>
-                <ul>
-                    <li>The standard CAPWAP mode of operation.</li>
-                    <li>Typically not recommended due to potential performance bottlenecks.</li>
-                </ul>
-            </li>
-            <li>
-                <p><strong>Local Switched:</strong></p>
-                <ul>
-                    <li>Maps user traffic to a VLAN on an adjacent switch.</li>
-                    <li>Control and management traffic are still sent over CAPWAP to the WLC.</li>
-                </ul>
-            </li>
-        </ul>
-        <h3 id="location-services">Location Services</h3>
-        <p>Location services have become an integral part of modern WLANs, providing various use cases:</p>
-        <ul>
-            <li><strong>Enterprise Asset Tracking:</strong> Helps organizations keep track of valuable assets.</li>
-            <li><strong>Location-Based Advertising:</strong> Delivers targeted advertisements based on the user&#39;s
-                location.
-            </li>
-        </ul>
-        <p><strong>Received Signal Strength (RSS):</strong> Measured in dBm, RSS can be used to triangulate a
-            device&#39;s
-            location, enhancing the precision of location-based services.</p>
-        <h4 id="cisco-solutions-for-location-services">Cisco Solutions for Location Services</h4>
-        <p>Cisco offers several solutions to implement robust location services:</p>
-        <ul>
-            <li><strong>Real-time Location Services (RTLS):</strong> Provides real-time tracking and location analytics.
-            </li>
-            <li><strong>Cisco DNA Spaces:</strong> A comprehensive platform for indoor location services.</li>
-            <li><strong>Cisco Meraki Platform:</strong> Suitable for medium-sized environments, offering seamless
-                location
-                tracking and management.</li>
-        </ul>
-        <h3 id="wlan-design-options">WLAN Design Options</h3>
-        <h4 id="ad-hoc-wireless-lan">Ad Hoc Wireless LAN</h4>
-        <p>An Ad Hoc wireless LAN allows devices to communicate directly with each other without needing an AP, suitable
-            for
-            quick, temporary networks.</p>
-        <h4 id="other-wlan-designs">Other WLAN Designs</h4>
-        <ul>
-            <li><strong>Infrastructure Wireless LAN:</strong> Features an AP connected to a switch via Ethernet,
-                providing a
-                robust and scalable network.</li>
-            <li><strong>Mesh Wireless LAN:</strong> Useful when devices are not near an Ethernet port; they can connect
-                to
-                another AP, creating a mesh network.</li>
-        </ul>
-        <h3 id="wireless-communications-theory">Wireless Communications Theory</h3>
-        <p>Understanding the fundamental theory of wireless communications is crucial for effective WLAN design.</p>
-        <h4 id="transverse-waves">Transverse Waves</h4>
-        <p>In a transverse wave:</p>
-        <ul>
-            <li>The Electric Field is vertical.</li>
-            <li>The Magnetic Field is horizontal.</li>
-        </ul>
-        <h4 id="how-a-dipole-antenna-radiates-em-waves">How a Dipole Antenna Radiates EM Waves</h4>
-        <p>A dipole antenna radiates electromagnetic waves efficiently when the pole is bent rather than straight. This
-            design
-            prevents the positive and negative charges from canceling each other out. The wavelength, represented by
-            Lambda (λ),
-            plays a critical role in determining the antenna&#39;s performance.</p>
-        <h3 id="conclusion">Conclusion</h3>
-        <p>A thorough understanding of WLAN design considerations, deployment options, and wireless communications
-            theory is
-            essential for building efficient and reliable wireless networks. Whether deploying in a small office or a
-            large
-            enterprise, selecting the right APs and leveraging advanced features like location services can
-            significantly
-            enhance network performance and user experience.</p>
+        <main>
+            <h2 id="wireless-networking-deep-dive">Wireless Networking Deep Dive</h2>
+            <p>In today&#39;s world, wireless networking has become a crucial component of both personal and
+                professional
+                environments. Understanding the intricacies of Wireless LAN (WLAN) design and deployment options can
+                significantly
+                enhance network performance and reliability. This article delves into the considerations for WLAN
+                design,
+                various
+                deployment options, and the underlying theory of wireless communications.</p>
+            <h3 id="wlan-design-considerations">WLAN Design Considerations</h3>
+            <h4 id="wireless-deployment-options">Wireless Deployment Options</h4>
+            <p>When designing a wireless network, selecting the right type of Access Point (AP) is essential. There are
+                primarily
+                two types of APs to consider: Autonomous and Lightweight.</p>
+            <ul>
+                <li>
+                    <p><strong>Autonomous Access Points (APs):</strong></p>
+                    <ul>
+                        <li>These are standalone, independent devices.</li>
+                        <li>Ideal for home or small office environments.</li>
+                        <li>They operate under a controller-less deployment model.</li>
+                        <li>Due to their limited scalability, they are not commonly used in large environments.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Lightweight Access Points (APs):</strong></p>
+                    <ul>
+                        <li>These require a central Wireless LAN Controller (WLC).</li>
+                        <li>Operate under a controller-based deployment model.</li>
+                        <li>WLCs can be physical or virtual.</li>
+                        <li>The controller manages and communicates changes to the APs.</li>
+                        <li>They use the Control and Provisioning of Wireless Access Points (CAPWAP) protocol, which
+                            facilitates
+                            communication between APs and the WLC.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h4 id="ways-to-deploy">Ways to Deploy</h4>
+            <p>There are several deployment models to consider based on network requirements and scale:</p>
+            <ul>
+                <li>
+                    <p><strong>Cisco FlexConnect:</strong></p>
+                    <ul>
+                        <li>Enables configuration and control of remote wireless networks.</li>
+                        <li>Similar to Layer 3 roaming with CAPWAP.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Central Switched:</strong></p>
+                    <ul>
+                        <li>The standard CAPWAP mode of operation.</li>
+                        <li>Typically not recommended due to potential performance bottlenecks.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Local Switched:</strong></p>
+                    <ul>
+                        <li>Maps user traffic to a VLAN on an adjacent switch.</li>
+                        <li>Control and management traffic are still sent over CAPWAP to the WLC.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3 id="location-services">Location Services</h3>
+            <p>Location services have become an integral part of modern WLANs, providing various use cases:</p>
+            <ul>
+                <li><strong>Enterprise Asset Tracking:</strong> Helps organizations keep track of valuable assets.</li>
+                <li><strong>Location-Based Advertising:</strong> Delivers targeted advertisements based on the
+                    user&#39;s
+                    location.
+                </li>
+            </ul>
+            <p><strong>Received Signal Strength (RSS):</strong> Measured in dBm, RSS can be used to triangulate a
+                device&#39;s
+                location, enhancing the precision of location-based services.</p>
+            <h4 id="cisco-solutions-for-location-services">Cisco Solutions for Location Services</h4>
+            <p>Cisco offers several solutions to implement robust location services:</p>
+            <ul>
+                <li><strong>Real-time Location Services (RTLS):</strong> Provides real-time tracking and location
+                    analytics.
+                </li>
+                <li><strong>Cisco DNA Spaces:</strong> A comprehensive platform for indoor location services.</li>
+                <li><strong>Cisco Meraki Platform:</strong> Suitable for medium-sized environments, offering seamless
+                    location
+                    tracking and management.</li>
+            </ul>
+            <h3 id="wlan-design-options">WLAN Design Options</h3>
+            <h4 id="ad-hoc-wireless-lan">Ad Hoc Wireless LAN</h4>
+            <p>An Ad Hoc wireless LAN allows devices to communicate directly with each other without needing an AP,
+                suitable
+                for
+                quick, temporary networks.</p>
+            <h4 id="other-wlan-designs">Other WLAN Designs</h4>
+            <ul>
+                <li><strong>Infrastructure Wireless LAN:</strong> Features an AP connected to a switch via Ethernet,
+                    providing a
+                    robust and scalable network.</li>
+                <li><strong>Mesh Wireless LAN:</strong> Useful when devices are not near an Ethernet port; they can
+                    connect
+                    to
+                    another AP, creating a mesh network.</li>
+            </ul>
+            <h3 id="wireless-communications-theory">Wireless Communications Theory</h3>
+            <p>Understanding the fundamental theory of wireless communications is crucial for effective WLAN design.</p>
+            <h4 id="transverse-waves">Transverse Waves</h4>
+            <p>In a transverse wave:</p>
+            <ul>
+                <li>The Electric Field is vertical.</li>
+                <li>The Magnetic Field is horizontal.</li>
+            </ul>
+            <h4 id="how-a-dipole-antenna-radiates-em-waves">How a Dipole Antenna Radiates EM Waves</h4>
+            <p>A dipole antenna radiates electromagnetic waves efficiently when the pole is bent rather than straight.
+                This
+                design
+                prevents the positive and negative charges from canceling each other out. The wavelength, represented by
+                Lambda (λ),
+                plays a critical role in determining the antenna&#39;s performance.</p>
+            <h3 id="conclusion">Conclusion</h3>
+            <p>A thorough understanding of WLAN design considerations, deployment options, and wireless communications
+                theory is
+                essential for building efficient and reliable wireless networks. Whether deploying in a small office or
+                a
+                large
+                enterprise, selecting the right APs and leveraging advanced features like location services can
+                significantly
+                enhance network performance and user experience.</p>
+        </main>
     </div>
     <script src="/js/include.js" defer></script>
     <footer></footer>

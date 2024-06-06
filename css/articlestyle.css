@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: center;
+    padding: 0px;
 }
 
 body {
@@ -13,16 +13,17 @@ body {
     color: #cdcdcd;
     background-color: rgb(29, 30, 32);
     padding: 10px 30px;
-    align-items: center;
 }
 
-div {
+main {
     display: block;
     margin: auto;
     width: fit-content;
     margin-left: 1in;
     margin-right: 1in;
-    max-width: 700px;
+    max-width: 500px;
+    align-items: center;
+    margin: 1in;
 }
 
 div h2,
@@ -35,7 +36,6 @@ div h6 {
     margin-bottom: 5;
 }
 
-
 div p {
     margin-top: 10px;
 }
@@ -43,8 +43,6 @@ div p {
 div ul {
     margin-left: 20px;
 }
-
-
 
 @media (max-width: 768px) {
     body {
@@ -95,14 +93,5 @@ div ul {
 
     article a {
         font-size: 1em;
-    }
-
-    #pagination {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #pagination button {
-        margin: 5px 0;
     }
 }
