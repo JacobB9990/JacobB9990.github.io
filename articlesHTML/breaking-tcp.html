@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/articlestyle-light.css">
+    <title>Breaking TCP</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
+<body>
+    <header></header>
+    <div>
+        <main>
+            <h2 id="breaking-transmission-control-protocol">Breaking Transmission Control Protocol</h2>
+            <h3 id="what-is-transmission-control-protocol">What is Transmission Control Protocol</h3>
+            <p>Transmission Control Protocol, known as TCP, is a protocol developed sometime in the 70s. TCP is one part
+                of the
+                TCP/IP model, specifically at the transport layer. TCP was developed to allow computers to transfer data
+                reliably
+                and safely. This protocol accomplishes this by using a three-way handshake between the client and the
+                host. Once
+                this handshake is established they will exchange the data. TCP is very rigorous containing many safety
+                checks
+                including error detection and correction, sequencing, flow control, congestion control, and
+                acknowledgments. So
+                breaking TCP is not an easy task.</p>
+            <h3 id="how-could-we-break-tcp">How could we &quot;Break&quot; TCP</h3>
+            <p>As I stated earlier TCP is rigorous, but that does not mean it is foolproof. There a many ways that you
+                could
+                potentially go about bringing TCP to its knees. However, this is where I would like to split this
+                section into two
+                parts: <strong>artificial</strong> and <strong>natural</strong>. Both have their benefits, both have
+                their
+                negatives. </p>
+            <h4 id="artificial">Artificial</h4>
+            <p>It is no lie that people have made programs that can simulate poor network connections. Many Linux
+                distributions are
+                shipped with a command that can replicate these conditions from the get-go. The Linux tool
+                &quot;tc&quot;, known as
+                Traffic Control, implements traffic delay and loss. This tool is very useful, but honestly, your delay
+                is not going
+                to stay at 10% all the time. Your delay will often vary depending on many different factors like
+                propagation delay,
+                transmission delay, processing delay, queuing delay, weather (if Wi-Fi), network topology, interference,
+                etc. These
+                factors are very hard to represent with a program as all of these issues often are random.</p>
+            <h4 id="natural">Natural</h4>
+            <p>That brings us to the &quot;natural&quot; part of breaking TCP. As I stated at the end of the
+                <strong>Artificial</strong> section, a lot of delay and loss can be random and not replicated through
+                some programs.
+                This is where you have to get creative. From the factors above we can try our best to make the worst
+                conditions
+                possible for our networking. Now, I cannot control the weather, but I can try to block the signals from
+                reaching the
+                router. One way I could do that is by using a Faraday shield, but I do not have access to one of those.
+                So, I must
+                try to find a corner in my house, or outside, where the wifi connection is not as strong. I can also
+                strain the
+                network with lots of data like YouTube, more devices, create bottlenecks, etc. I would like to try this
+                strategy
+                first as honestly it seems like more fun.
+            </p>
+        </main>
+    </div>
+    <script src="/js/include.js" defer></script>
+    <script src="/js/toggle-theme.js" defer></script>
+    <footer></footer>
+</body>
+
+</html>
