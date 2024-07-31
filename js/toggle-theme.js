@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Function to initialize the theme toggle
     function initThemeToggle() {
         const themeToggleButton = document.getElementById('theme-toggle');
         if (themeToggleButton) {
@@ -16,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Wait for the header and footer to be included
+
     const observer = new MutationObserver(() => {
         const header = document.querySelector('header');
         const footer = document.querySelector('footer');

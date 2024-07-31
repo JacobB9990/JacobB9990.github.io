@@ -25,6 +25,13 @@ button:hover {
 svg {
     width: 24px;
     height: 24px;
+    fill: #d21717;
+}
+
+div {
+    margin-top: 8px;
+    margin-left: 6px;
+    border-radius: 100px;
 }
 
 body {
@@ -97,6 +104,10 @@ main {
     max-width: 1000px;
     margin: auto;
     min-width: 300px;
+}
+
+main a svg {
+    color: blue
 }
 
 footer {
@@ -188,7 +199,7 @@ u {
 
 svg {
     width: 30px;
-    fill: #0066cc;
+    fill: #f5d349;
 }
 
 .article {
@@ -274,4 +285,28 @@ svg {
 footer span {
     color: #666;
     margin: 20px;
+}
+
+
+header h1 a:hover {
+    color: #888;
+}
+
+article p {
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+#pagination button {
+    background-color: #333;
+    color: #cdcdcd;
+}
+
+#pagination button:disabled {
+    background-color: #333;
+    color: #cdcdcd;
+}
+
+#pagination span {
+    color: #cdcdcd;
 }
