@@ -1,0 +1,1 @@
+Hello I am not a JS dev and just learned some HTML. It is nothing short of a miricale that this is even able to function. I did like most of the HTML & CSS and used some ai to do some features that honestly, I do not have the time for at this momment. I plan on uploading articles about things I like. Thanks. And sorry for the crappy structure.
