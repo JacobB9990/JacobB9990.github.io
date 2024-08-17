@@ -1,14 +1,23 @@
+/* Universal Styles */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* SVG Styling */
 div svg {
     margin-top: 8px;
     margin-left: 6px;
 }
 
+svg {
+    width: 24px;
+    height: 24px;
+    fill: #3c63e2; /* Changed fill color */
+}
+
+/* Button Styling */
 button {
     background: none;
     border: none;
@@ -19,29 +28,18 @@ button {
 }
 
 button:hover {
-    background-color: #333;
+    background-color: #333; /* Changed hover background color */
 }
 
-svg {
-    width: 24px;
-    height: 24px;
-    fill: #3c63e2;
-}
-
-div {
-    margin-top: 8px;
-    margin-left: 6px;
-    border-radius: 100px;
-}
-
+/* General Layout */
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.6;
-    color: #cdcdcd;
-    background-color: rgb(29, 30, 32);
+    color: #cdcdcd; /* Changed text color */
+    background-color: rgb(29, 30, 32); /* Changed background color */
     padding: 10px 30px;
 }
 
@@ -62,11 +60,11 @@ header h1 {
 header h1 a {
     text-decoration: none;
     transition: none;
-    color: #cdcdcd;
+    color: #cdcdcd; /* Changed link color */
 }
 
 header h1 a:hover {
-    color: #888;
+    color: #888; /* Changed hover color */
 }
 
 nav {
@@ -88,14 +86,14 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #696969;
+    color: #696969; /* Changed link color */
     padding: 5px 10px;
     border-radius: 50px;
     transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #333;
+    background-color: #333; /* Changed hover background color */
 }
 
 main {
@@ -115,8 +113,9 @@ footer {
     font-size: small;
 }
 
+/* Article Styling */
 article {
-    background-color: #2e3137;
+    background-color: #2e3137; /* Changed background color */
     border-radius: 10px;
     padding: 10px 20px;
     margin-bottom: 20px;
@@ -128,7 +127,7 @@ article {
 
 article a {
     text-decoration: none;
-    color: #cdcdcd !important;
+    color: #cdcdcd !important; /* Changed link color */
     font-weight: bold;
     font-size: larger;
 }
@@ -139,24 +138,25 @@ article p {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #ababab;
+    color: #ababab; /* Changed text color */
 }
 
 article a:hover {
     text-decoration: underline;
-    color: #3c63e2 !important;
+    color: #3c63e2 !important; /* Changed hover color */
 }
 
 a:link,
 a:visited {
-    color: #ababab;
+    color: #ababab; /* Changed link color */
 }
 
 a:hover,
 a:active {
-    color: #3c63e2;
+    color: #3c63e2; /* Changed hover color */
 }
 
+/* Pagination Styling */
 #pagination {
     display: flex;
     justify-content: center;
@@ -167,39 +167,41 @@ a:active {
 #pagination button {
     padding: 10px 20px;
     margin: 0 10px;
-    background-color: #333;
+    background-color: #333; /* Changed background color */
     border: none;
-    color: #cdcdcd;
+    color: #cdcdcd; /* Changed text color */
     cursor: pointer;
     border-radius: 50px;
 }
 
 #pagination button:disabled {
-    background-color: #333;
-    color: #cdcdcd;
+    background-color: #333; /* Changed background color */
+    color: #cdcdcd; /* Changed text color */
     cursor: not-allowed;
     visibility: visible;
 }
 
 #pagination span {
-    color: #cdcdcd;
+    color: #cdcdcd; /* Changed text color */
 }
 
+/* Section Styling */
 section {
     margin-top: 40px;
 }
 
+/* Underline Styling */
 u {
     text-decoration: underline;
 }
 
-svg {
-    width: 30px;
-    fill: #3c63e2;
-}
-
+/* Article Specific Classes */
 .article {
     margin-bottom: 20px;
+    background-color: #2e3137; /* Changed background color */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .article-title {
@@ -214,9 +216,10 @@ svg {
 
 .article-date {
     font-style: italic;
-    color: #888;
+    color: #888; /* Changed text color */
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
     body {
         padding: 10px 20px;
@@ -279,6 +282,6 @@ svg {
 }
 
 footer span {
-    color: #a3a3a3;
+    color: #a3a3a3; /* Changed text color */
     margin: 20px;
 }
