@@ -344,3 +344,15 @@ article p {
     font-size: smaller; 
     margin-top: 20px;
 }
+
+code {
+    background-color: #e4e4e4e5;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+h1,
+h2,
+h3 {
+    color: #075eb6;
+}
