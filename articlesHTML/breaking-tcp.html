@@ -32,7 +32,8 @@
                 with weak connectivity or by placing obstacles between the router and devices. Additionally, I can
                 overload the network with heavy data traffic, such as streaming videos and connecting multiple devices,
                 to create bottlenecks. In the real world, these conditions are all possible, and common, but often occur
-                at random. In this experiment I am just going to press "Ctrl + C" for convenience's sake.</p>
+                at random. In this experiment I am just going to press "Ctrl + C" for convenience's sake.
+            </p>
             <h2 id="method">Method</h2>
             <p>I have created a straightforward program that transfers a file from my computer, which is connected to a
                 switch via Ethernet, to my laptop over Wi-Fi. The image is just a picture of a mountain. I then will
@@ -64,10 +65,12 @@
             <img src="/assets/images/WiresharkSYNACK.png" height="150">
             <p>Seeing these flags in action gives a clear look at how TCP handles congestion. It shows how the protocol
                 adapts to network issues to try and prevent packet loss.
-            When the transfer ended, we saw the FIN flag, which normally means the connection is closing. However,
-                the file did not finish transferring before we stopped the session. The last flag we saw was RST (Reset),
+                When the transfer ended, we saw the FIN flag, which normally means the connection is closing. However,
+                the file did not finish transferring before we stopped the session. The last flag we saw was RST
+                (Reset),
                 which essentially tells the connection to &quot;stop immediately.&quot;
-            Comparing images before and after the transfer, it was clear there was a drop in quality. This highlights
+                Comparing images before and after the transfer, it was clear there was a drop in quality. This
+                highlights
                 how network issues can affect data transfer and the final result.</p>
             <img src="/assets/images/WiresharkRST.png" height="150" width="900">
             <h4 id="before">Before</h4>
@@ -79,7 +82,8 @@
                 other. And we also gained a great insight on what happens when something goes wrong. The network I was
                 connected to did have some potential congestion and TCP recognized that and provided the proper flags to
                 try to mitigate those issues. However, the transfer was doomed from the start. One thing I did not
-                realize was that once I terminated the process, the JPEG image was all there, but just pixelated towards the
+                realize was that once I terminated the process, the JPEG image was all there, but just pixelated towards
+                the
                 bottom.</p>
         </main>
     </div>
